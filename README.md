@@ -1,5 +1,5 @@
 # cliprxyz
-Fetch info from a Twitch clip with Clipr.xyz website.
+Fetch infos from a Twitch clip with [Clipr.xyz](https://clipr.xyz) website.
 
 <a href="https://github.com/luisgbr1el/cliprxyz/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/luisgbr1el/cliprxyz?style=for-the-badge"></a>
 <a href="https://github.com/luisgbr1el/cliprxyz/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/luisgbr1el/cliprxyz?style=for-the-badge"></a>
@@ -83,7 +83,7 @@ cliprxyz.downloadClip("CLIP_URL").then(res => {
 const cliprxyz = require("cliprxyz");
 
 cliprxyz.downloadClip("CLIP_URL").then(res => {
-    console.log(res.creatorWasPlaying)
+    console.log(res.clippedOn)
 });
 ```
 
