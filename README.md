@@ -1,9 +1,9 @@
 # cliprxyz
 Fetch info from a Twitch clip with Clipr.xyz website.
 
-<a href="https://github.com/luisgbr1el/cliprxyz/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/luisgbr1el/cliprxyz?style=flat-square"></a>
-<a href="https://github.com/luisgbr1el/cliprxyz/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/luisgbr1el/cliprxyz?style=flat-square"></a>
-<a href="https://github.com/luisgbr1el/cliprxyz"><img alt="GitHub license" src="https://img.shields.io/github/license/luisgbr1el/cliprxyz?style=flat-square"></a>
+<a href="https://github.com/luisgbr1el/cliprxyz/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/luisgbr1el/cliprxyz?style=for-the-badge"></a>
+<a href="https://github.com/luisgbr1el/cliprxyz/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/luisgbr1el/cliprxyz?style=for-the-badge"></a>
+<a href="https://github.com/luisgbr1el/cliprxyz"><img alt="GitHub license" src="https://img.shields.io/github/license/luisgbr1el/cliprxyz?style=for-the-badge"></a>
 
 - The package doesn't have a **error callback**.
 
