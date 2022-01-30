@@ -35,8 +35,16 @@ exports.downloadClip = function (query, offset) {
         $("h2.max-w-2xl").each(function (index, element) {
           clipNameRaw.push($(element).text());
         });
+        var issueDetector = [];
+        $("p.text-sm").each(function (index, element) {
+          issueDetector.push($(element).text());
+        });
 
-        if (!clipNameRaw === undefined) {
+        if (clip[0] === undefined) {
+          const err = "Error: The clip was not found. Try a valid url."
+
+          resolve(err);
+        } else {
           const clipName = clipNameRaw[0].replace(" ", ""),
           clipUrl = `${clip[0]}`;
 
@@ -50,14 +58,6 @@ exports.downloadClip = function (query, offset) {
           };
 
           resolve(res);
-        } else {
-          const error = "The clip was not found. Try a valid url."
-        
-          var err = {
-            error
-          };
-
-          resolve(err);
         }
       }
     });
