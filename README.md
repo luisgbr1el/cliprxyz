@@ -18,7 +18,7 @@ const cliprxyz = require("cliprxyz");
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res)
 }).catch(err => {
-  console.log(err);
+    console.log(err);
 });
 ```
 
@@ -41,7 +41,7 @@ const cliprxyz = require("cliprxyz");
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.clipName)
 }).catch(err => {
-  console.log(err);
+    console.log(err);
 });
 ```
 
@@ -52,7 +52,7 @@ const cliprxyz = require("cliprxyz");
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.clipUrl)
 }).catch(err => {
-  console.log(err);
+    console.log(err);
 });
 ```
 
@@ -63,7 +63,7 @@ const cliprxyz = require("cliprxyz");
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.creatorUsername)
 }).catch(err => {
-  console.log(err);
+    console.log(err);
 });
 ```
 
@@ -74,7 +74,7 @@ const cliprxyz = require("cliprxyz");
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.creatorUrl)
 }).catch(err => {
-  console.log(err);
+    console.log(err);
 });
 ```
 
@@ -85,7 +85,7 @@ const cliprxyz = require("cliprxyz");
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.creatorWasPlaying)
 }).catch(err => {
-  console.log(err);
+    console.log(err);
 });
 ```
 
@@ -96,7 +96,7 @@ const cliprxyz = require("cliprxyz");
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.clippedOn)
 }).catch(err => {
-  console.log(err);
+    console.log(err);
 });
 ```
 
