@@ -36,10 +36,11 @@ exports.downloadClip = function (query, offset) {
           clipNameRaw.push($(element).text());
         });
 
-        const clipName = clipNameRaw[0].replace(" ", ""),
+        if (!clipNameRaw === undefined) {
+          const clipName = clipNameRaw[0].replace(" ", ""),
           clipUrl = `${clip[0]}`;
 
-        var res = {
+          var res = {
           clipName,
           clipUrl,
           creatorUsername,
@@ -49,6 +50,15 @@ exports.downloadClip = function (query, offset) {
         };
 
         resolve(res);
+        } else {
+          const error = "The clip was not found. Try a valid url."
+        
+          var err = {
+            error
+          };
+
+          resolve(err);
+        }
       }
     });
   });
