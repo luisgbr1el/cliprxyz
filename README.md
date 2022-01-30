@@ -5,7 +5,6 @@ Fetch infos from a Twitch clip with [Clipr.xyz](https://clipr.xyz) website.
 <a href="https://github.com/luisgbr1el/cliprxyz/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/luisgbr1el/cliprxyz?style=for-the-badge"></a>
 <a href="https://github.com/luisgbr1el/cliprxyz"><img alt="GitHub license" src="https://img.shields.io/github/license/luisgbr1el/cliprxyz?style=for-the-badge"></a>
 
-- The package doesn't have a **error callback**.
 
 # Install (with NPM)
 ```javascript
@@ -18,10 +17,12 @@ const cliprxyz = require("cliprxyz");
 
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res)
+}).catch(err => {
+  console.log(err);
 });
 ```
 
-The result will be:
+The package will shows:
 ```javascript
 {
   clipName: 'Shows the clip name',
@@ -39,6 +40,8 @@ const cliprxyz = require("cliprxyz");
 
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.clipName)
+}).catch(err => {
+  console.log(err);
 });
 ```
 
@@ -48,6 +51,8 @@ const cliprxyz = require("cliprxyz");
 
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.clipUrl)
+}).catch(err => {
+  console.log(err);
 });
 ```
 
@@ -57,6 +62,8 @@ const cliprxyz = require("cliprxyz");
 
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.creatorUsername)
+}).catch(err => {
+  console.log(err);
 });
 ```
 
@@ -66,6 +73,8 @@ const cliprxyz = require("cliprxyz");
 
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.creatorUrl)
+}).catch(err => {
+  console.log(err);
 });
 ```
 
@@ -75,6 +84,8 @@ const cliprxyz = require("cliprxyz");
 
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.creatorWasPlaying)
+}).catch(err => {
+  console.log(err);
 });
 ```
 
@@ -84,6 +95,8 @@ const cliprxyz = require("cliprxyz");
 
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.clippedOn)
+}).catch(err => {
+  console.log(err);
 });
 ```
 
