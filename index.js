@@ -47,9 +47,9 @@ exports.downloadClip = function (query, offset) {
           creatorUrl,
           creatorWasPlaying,
           clippedOn,
-        };
+          };
 
-        resolve(res);
+          resolve(res);
         } else {
           const error = "The clip was not found. Try a valid url."
         
