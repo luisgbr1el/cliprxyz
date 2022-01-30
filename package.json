@@ -1,7 +1,7 @@
 {
   "name": "cliprxyz",
-  "version": "1.0.1",
-  "description": "Fetch info from a Twitch clip with Clipr.xyz website.",
+  "version": "1.0.2",
+  "description": "Fetch infos from a Twitch clip with Clipr.xyz website.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
