@@ -40,6 +40,13 @@ exports.downloadClip = function (query, offset) {
           issueDetector.push($(element).text());
         });
 
+        var profilePictureUrlRaw = [];
+        $(".relative img").each(function (index, element) {
+          profilePictureUrlRaw.push($(element).attr("src"));
+        });
+
+        var creatorPictureUrl = profilePictureUrlRaw[2];
+
         if (clip[0] === undefined) {
           const err = "Error: The clip was not found. Try a valid url."
 
@@ -53,6 +60,7 @@ exports.downloadClip = function (query, offset) {
           clipUrl,
           creatorUsername,
           creatorUrl,
+          creatorPictureUrl,
           creatorWasPlaying,
           clippedOn,
           };

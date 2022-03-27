@@ -29,6 +29,7 @@ The package will shows:
   clipUrl: 'Shows the clip url',
   creatorUsername: 'Shows the creator username',
   creatorUrl: 'Shows the creator profile url',
+  creatorPictureUrl: 'Shows the creator profile picture url',
   creatorWasPlaying: 'Shows what the creator was playing',
   clippedOn: 'Shows the date from when the livestream was clipped'
 }
@@ -73,6 +74,17 @@ const cliprxyz = require("cliprxyz");
 
 cliprxyz.downloadClip("CLIP_URL").then(res => {
     console.log(res.creatorUrl)
+}).catch(err => {
+    console.log(err);
+});
+```
+
+## Get the creator profile picture url (300x300)
+```javascript
+const cliprxyz = require("cliprxyz");
+
+cliprxyz.downloadClip("CLIP_URL").then(res => {
+    console.log(res.creatorPictureUrl)
 }).catch(err => {
     console.log(err);
 });
