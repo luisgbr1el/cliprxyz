@@ -2,7 +2,14 @@ const request = require("request"),
   cheerio = require("cheerio");
 
 exports.downloadClip = function (query, offset) {
-  clipId = query.replace("https://clips.twitch.tv/", "");
+
+  let clipId = '';
+  if (query.includes("https://clips.twitch.tv/")) {
+    clipId = query.replace("https://clips.twitch.tv/", "");
+  } else if (query.includes("https://www.twitch.tv/") && query.includes("/clip/")){
+    clipId = query.replace("https://www.twitch.tv/", "");
+  }
+  
   return new Promise(function (resolve, reject) {
     request("https://clipr.xyz/" + clipId, function (error, response, body) {
       if (error) {
@@ -24,7 +31,7 @@ exports.downloadClip = function (query, offset) {
 
         const creatorUsername = creator[0],
           creatorUrl = `https://twitch.tv/${creator[0]}`;
-        (creatorWasPlaying = creator[1]), (clippedOn = creator[2]);
+        (creatorWasPlaying = creator[1]), (clippedOn = creator[2].replace(" ", ''));
 
         var clip = [];
         $(".flex-shrink-0 a.inline-flex").each(function (index, element) {
